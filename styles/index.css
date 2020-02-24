@@ -1,0 +1,210 @@
+body {
+    background: url("../images/background.jpg");
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+}
+
+.logo-container {
+    float: left;
+    margin: 0;
+    color: #000;
+    display: block;
+    font-size: 44px;
+    font-family: 'Montez', cursive;
+}
+
+.logo-container span {
+    font-family: 'Ubuntu Mono', monospace;
+    color: purple;
+    font-size: 14px;
+}
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.btn-container {
+    float: right;
+}
+
+.btn-container button {
+    background: blue;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    padding: 8px 23px;
+    border-radius: 5px;
+}
+
+section .scribbler-action {
+    width: 20%;
+    position: absolute;
+    top: 50%;
+    bottom: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    right: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section .scribbler-action a {
+    background-color: yellow;
+    border: none;
+    background: yellow;
+    outline: none;
+    padding: 0 22px;
+    align-items: center;
+    display: flex;
+    height: 37px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-content form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-content form .form-input input {
+    outline: none;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.modal-content form .form-input label {
+    margin-bottom: 5px;
+}
+
+.modal-content form button {
+    width: 100%;
+    background-color: green;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+.not-a-member {
+    text-align: center;
+}
+
+.not-a-member span {
+    color: blue;
+    cursor: pointer;
+}
+
+.modal-content form .post-create {
+    text-align: center;
+    width: 20%;
+}
+
+#post-create-btn {
+    text-align: center;
+}
+
+#postContentModal .modal-content {
+    width: 70%;
+}
+
+#signInModal .modal-content  {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+#signInModal .modal-content .close-signin {
+    font-size: 28px;
+    color: #aaaaaa;
+    float: right;
+    font-weight: bold;
+}
+
+#postContentModal .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    border: 1px solid #888;
+    padding: 20px;
+    width: 50%;
+}
+
+.modal-content {
+    color: #888;
+    font-size: 30px;;
+}
+
+#postContentModal .modal-content .close-postmodal {
+    color: #aaaaaa;
+    float: right;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.labels {
+    color: #000;
+    font-size: 20px;
+}
+
+
+#postContentModal .modal-content form input {
+    background-color: #888;
+    border: none;
+    border-radius: 2px;
+    outline: 0;
+}
+
+#postContentModal .modal-content form textarea {
+    background-color: #ccc;
+    border: none;
+    border-radius: 2px;
+    outline: 0;
+}

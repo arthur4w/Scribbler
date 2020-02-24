@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles/postlist.css">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="../index.html">ScriBBler</a><br>
+            <span>Explore, Imagine, Create</span>
+        </div>
+        <div class="btn-container">
+            <button onclick="showSignUpModal()">Sign Up</button>
+            <button onClick="showSignInModal()">Log In</button>
+        </div>
+    </nav>
+
+    <div class="post-container">
+
+        <!-- post 1 starts here -->
+        <div class="post" id="shrishtiGupta">
+            <div class="name">
+                <p>Srishti Gupta</p>
+            </div>
+
+            <div class="content">
+                <div class="content-para">
+                    <span>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</span>
+                    <span onclick="showConsentModal(`shrishtiGupta`)">
+                        <i class="fa fa-trash"></i>
+                    </span>
+                </div>
+                <p>Since JavaScript does not have any type-checking, either of these keywords can be used to declare a
+                    variable of any type (datatype) in JavaScript. Though all the three keywords are used for the same
+                    purpose, they are different.</p>
+                <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                <a href="post.html" style="float: right;">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </div>
+        </div>
+        <!-- post 1 ends here -->
+
+        <!-- post 2 starts here -->
+        <div class="post" id="colbyFayock">
+            <div class="name">
+                <p>Colby Fayock</p>
+            </div>
+
+            <div class="content">
+                <div class="content-para">
+                    <span>What is linting and how can it save you time?</span>
+                    <span onclick="showConsentModal(`colbyFayock`)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p>One of the biggest challenges in software development is time. It’s something we can’t easily get
+                    more of, but linting can help us make the most out of the time we have.</p>
+                <a href="post.html" style="float: right;">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </div>
+        </div>
+        <!-- post 2 ends here -->
+
+        <!-- post 3 starts here -->
+        <div class="post" id="yazeedBzadough">
+            <div class="name">
+                <p>Yazeed Bzadough</p>
+            </div>
+
+            <div class="content">
+                <div class="content-para">
+                    <span>How to Get More Views on Your Tech Blog</span>
+                    <span onclick="showConsentModal(`yazeedBzadough`)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+
+                    </span>
+                </div>
+                <p>If you're a developer with a Twitter account, you've already seen everyone and their cat start a
+                    blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a recognizable
+                    name in the industry.</p>
+                <a href="post.html" style="float: right;">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </div>
+        </div>
+        <!-- post 3 ends here -->
+
+        <!-- post 4 starts here -->
+        <div class="post" id="ceddBurge">
+            <div class="name">
+                <p>Cedd Burge</p>
+            </div>
+
+            <div class="content">
+                <div class="content-para">
+                    <span>How to write easily describable code</span>
+                    <span onclick="showConsentModal(`ceddBurge`)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p>When code is not describable using words, most people have to do some mental mapping to turn it in to
+                    words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different
+                    people will map to different words, which
+                    leads to confusion when discussing the code.</p>
+                <a href="post.html" style="float: right;">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </div>
+        </div>
+        <!-- post 4 ends here -->
+
+        <!-- post 5 starts here -->
+        <div class="post">
+            <div class="name" id="shrishtiGupta1">
+                <p>Srishti Gupta</p>
+            </div>
+            <div class="content">
+                <div class="content-para">
+                    <span>Everything you should know about ‘module’ & ‘require’ in Node.js</span>
+                    <span onclick="showConsentModal(`shrishtiGupta1`)">
+                        <i class="fa fa-trash" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <p>Node.js treats each JavaScript file as a separate module. For instance, if you have a file containing
+                    some code and this file is named xyz.js, then this file is treated as a module in Node, and you can
+                    say that you’ve created a module
+                    named xyz.</p>
+                <a href="post.html" style="float: right;">
+                    <i class="fas fa-ellipsis-h"></i>
+                </a>
+            </div>
+        </div>
+        <!-- post 5 ends here -->
+
+        <!-- TODO: Write code for delete post modal here -->
+
+    </div>
+
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Get Started!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-enter your password" required></input>
+                </div>
+
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close-signin">&times;</span>
+            <p>Welcome Back!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your username" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <button type="submit">Sign In</button>
+                <p class="not-a-member">Not a member? <span onclick="showSignUpModal()">Sign Up</span></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="postContentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-postmodal">&times;</span>
+            <p>Pen your Post</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Title</label>
+                    <input type="text" placeholder="Enter the title of your post" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Content</label>
+                    <textarea type="text" col="100" rows="8" placeholder="Enter the content of the post"
+                        required></textarea>
+                </div>
+                <div id="post-create-btn">
+                    <button type="submit" class="post-create">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="consentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-consent-modal">&times;</span>
+            <p>Do you want to delete this post?</p>
+            <div id="consentModal-btns">
+                <button type="button" onclick="deletePost()" class="yes">Yes</button>
+                <button type="button" onclick="hideConsentModal()" class="no">No</button>
+            </div>
+        </div>
+    </div>
+    <!-- list of all posts ends here -->
+    <script src="../scripts/postlist.js"></script>
+    <script src="../scripts/index.js"></script>
+</body>
+
+</html>

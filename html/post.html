@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="../styles/post.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">ScriBBler</a> <br/>
+            <span>Explore, Imagine, Create</span>
+        </div>
+        <div class="btn-container">
+            <button onclick="showSignUpModal()">Sign Up</button>
+            <button onClick="showSignInModal()">Sign In</button>
+        </div>
+    </nav>
+
+    <div class="post-page-container" id="postContainer">
+        <h1 id="postTitle">Everything you should know about 'module' and 'require' in Node.js</h1>
+        <div class="author">
+            <span>Shrishti Gupta</span>
+            <button onclick="editPost(`postTitle`, `postContent`)">Edit <i class="fa fa-edit"></i></button>
+        </div>
+        <div class="post" id="postContent">
+            Unless explicitly mentioned otherwise (for example, at some places, it might be mentioned that a certain button MUST be red in color), you can 
+            customize your own CSS for any HTML element you want. However, please keep in mind that the overall appearance of any HTML page must be similar 
+            (if not identical) to the outcome of the screen mentioned prior to each part of the assignment. This means that if certain elements are placed towards the
+            top-right part of the screen in the final outcome figure, then they MUST be placed at the top-right corner ONLY. Failing to do so will lead to deduction of 
+            marks. Note that there might be multiple ways in which a certain CSS effect can be achieved. So the exact syntax of the CSS code does not matter, but the 
+            overall appearance of any given page must be similar to the expected outcome.
+        </div>
+    </div>
+    
+    <div class="editable-post" id="editPost">
+        <input type="text" class="header-input" id="inputTitle"></input>
+        <div class="author">
+            <span>Shrishti Gupta</span>
+            <button onclick="updatePost(`postTitle`, `postContent`)">Save <i class="fa fa-save"></i></button>
+        </div>
+        <div class="edit-post">
+            <textarea type="text-area" col="100" id="inputPost" rows="20" class="header-input"></textarea>
+        </div>
+    </div>
+    
+    <div class="like-section" id="likeSection">
+        <button onclick="showLiked(`likeSection`)">Like <i class="fas fa-thumbs-up"></i></button>
+        <p>Be the first one to like this!</p>
+    </div>
+    
+    <div class="like-section" id="likedSection">
+        <button>Liked <i class="fas fa-thumbs-up"></i></button>
+        <p>1 person likes this!</p>
+    </div>
+    
+    <div class="comment-section">
+        <textarea type="text-area" col="20" id="inputComment" rows="5" class="commentSection"></textarea>
+        <button onclick="addComment(`inputComment`)">Comment</button>
+    </div>
+    
+    <div class="all-comment-section">
+        <h3>All Comments</h3>
+        <div class="comments">
+            <div class="comment" id="comment">
+                <p id="comment">Hello</p>
+            </div>
+        </div>
+    </div>
+    
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Get Started!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Re-enter your password" required></input>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+    
+    
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Welcome Back!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your username" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <button type="submit">Sign In</button>
+                <p class="not-a-member">Not a member? <span onclick="showSignUpModal()">Sign Up</span></p>
+            </form>
+        </div>
+    </div>
+    
+    <!-- list of all posts ends here -->
+    <script src="../scripts/post.js"></script>
+    <script src="../scripts/index.js"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <!-- TODO: Include Font Awesome file here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html">ScriBBler</a> <br/>
+            <span>Explore, Imagine, Create</span>
+        </div>
+        <div class="btn-container">
+            <button onclick="showSignUpModal()">Sign Up</button>
+            <button onClick="showSignInModal()">Sign In</button>
+        </div>
+    </nav>
+    <section>
+        <div class="scribbler-action">
+            <a href="./html/postslist.html">All Posts</a>
+            <a href="#" onClick="showCreatePostModal()">Create Post</a>
+        </div>
+    </section>
+    <div id="signUpModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h4>Get Started</h4>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label class="labels">Name</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label class="labels">Username</label>
+                    <input type="text" placeholder="Enter your name" required></input>
+                </div>
+                <div class="form-input">
+                    <label class="labels">Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <div class="form-input">
+                    <label class="labels">Confirm Password</label>
+                    <input type="password" placeholder="Re-enter your password" required></input>
+                </div>
+
+
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="signInModal" class="modal">
+        <div class="modal-content">
+            <span class="close-signin">&times;</span>
+            <p>Welcome Back!</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter your username" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter your password" required></input>
+                </div>
+                <button type="submit">Sign In</button>
+                <p class="not-a-member">Not a member? <span onclick="showSignUpModal()">Sign Up</span></p>
+            </form>
+        </div>
+    </div>
+
+    <div id="postContentModal" class="modal">
+        <div class="modal-content">
+            <span class="close-postmodal">&times;</span>
+            <p>Pen your Post</p>
+            <hr />
+            <form>
+                <div class="form-input">
+                    <label>Title</label>
+                    <input type="text" placeholder="Enter the title of your post" required></input>
+                </div>
+                <div class="form-input">
+                    <label>Content</label>
+                    <textarea type="text" col="100" rows="30" placeholder="Enter the content of the post" required></textarea>
+                </div>
+                <div id="post-create-btn">
+                    <button type="submit" class="post-create">Create</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/index.js"></script>
+</body>
+
+</html>

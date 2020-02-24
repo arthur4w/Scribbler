@@ -1,0 +1,236 @@
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.post-container {
+    margin-top: 100px;
+    font-family: 'Arial';
+}
+
+.logo-container {
+    float: left;
+    margin: 0;
+    color: #000;
+    display: block;
+    font-size: 44px;
+    font-family: 'Montez', cursive;
+}
+
+.logo-container span {
+    font-family: 'Ubuntu Mono', monospace;
+    color: purple;
+    font-size: 14px;
+}
+
+
+.navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.btn-container {
+    float: right;
+}
+
+.btn-container button {
+    background: blue;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    margin-right: 20px;
+    color: white;
+    padding: 8px 23px;
+    border-radius: 5px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.close:hover .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.modal-content form .form-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.modal-content form .form-input input {
+    outline: none;
+    height: 25px;
+    padding-left: 5px;
+}
+
+.modal-content form .form-input label {
+    margin-bottom: 5px;
+}
+
+.modal-content form button {
+    width: 100%;
+    background-color: green;
+    outline: none;
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+}
+
+
+.post-page-container {
+    text-align: center;
+    width: 90%;
+    margin: 120px auto;
+}
+
+.post-page-container h1 {
+    font-size: 20px;
+}
+
+.post-page-container .author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.post-page-container .author button {
+    background-color: grey;
+    border: none;
+    outline: 0;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 5px grey;;
+}
+
+.post-page-container .post {
+    text-align: justify;
+    margin-top: 50px;
+    line-height: 24px;
+}
+
+.editable-post {
+    text-align: center;
+    width: 90%;
+    margin: 120px auto;
+}
+
+.editable-post input .editable-post textarea {
+    width: 100%;;
+    margin: 30px 0;
+    padding: 10px;
+    font-size: 20px;
+    outline: 0;
+    border: 2px solid #f436cb14;
+}
+
+.editable-post .author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.editable-post .author button {
+    background-color: #f436cb14;
+    border: none;
+    outline: 0;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 5px grey;;
+}
+
+#editPost {
+    display: none;
+}
+
+.like-section {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.like-section button {
+    text-align: center;
+    background-color: #f436cb14;
+    border: none;
+    outline: 0;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 5px grey;
+}
+
+#likedSection {
+    display: none;
+}
+
+.comment-section {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.comment-section button {
+    text-align: center;
+    background-color: #f436cb14;
+    border: none;
+    outline: 0;
+    width: 10%;
+    padding: 10px 15px;
+    box-shadow: 10px 10px 5px grey;
+    margin-top: 30px;
+}
+
+.comment-section textarea {
+    width: 40%;
+    outline: 0;
+}
+
+.all-comment-section {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-left: 5%;
+}
+
+.all-comment-section .comments {
+    background-color: #ccc;
+}
+
+.all-comment-section .comments .comment p {
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 15px;
+}
